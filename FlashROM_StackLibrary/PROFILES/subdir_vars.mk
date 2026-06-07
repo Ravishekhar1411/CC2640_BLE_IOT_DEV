@@ -10,6 +10,7 @@ C_SRCS += \
 ../PROFILES/button_service.c \
 ../PROFILES/data_service.c \
 ../PROFILES/devinfoservice.c \
+../PROFILES/game_button_service.c \
 ../PROFILES/game_service.c \
 C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/blestack/host/gatt_uuid.c \
 C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/blestack/host/gattservapp_util.c \
@@ -22,6 +23,7 @@ C_DEPS += \
 ./PROFILES/button_service.d \
 ./PROFILES/data_service.d \
 ./PROFILES/devinfoservice.d \
+./PROFILES/game_button_service.d \
 ./PROFILES/game_service.d \
 ./PROFILES/gatt_uuid.d \
 ./PROFILES/gattservapp_util.d \
@@ -34,6 +36,7 @@ OBJS += \
 ./PROFILES/button_service.obj \
 ./PROFILES/data_service.obj \
 ./PROFILES/devinfoservice.obj \
+./PROFILES/game_button_service.obj \
 ./PROFILES/game_service.obj \
 ./PROFILES/gatt_uuid.obj \
 ./PROFILES/gattservapp_util.obj \
@@ -46,6 +49,7 @@ OBJS__QUOTED += \
 "PROFILES\button_service.obj" \
 "PROFILES\data_service.obj" \
 "PROFILES\devinfoservice.obj" \
+"PROFILES\game_button_service.obj" \
 "PROFILES\game_service.obj" \
 "PROFILES\gatt_uuid.obj" \
 "PROFILES\gattservapp_util.obj" \
@@ -58,6 +62,7 @@ C_DEPS__QUOTED += \
 "PROFILES\button_service.d" \
 "PROFILES\data_service.d" \
 "PROFILES\devinfoservice.d" \
+"PROFILES\game_button_service.d" \
 "PROFILES\game_service.d" \
 "PROFILES\gatt_uuid.d" \
 "PROFILES\gattservapp_util.d" \
@@ -70,6 +75,7 @@ C_SRCS__QUOTED += \
 "../PROFILES/button_service.c" \
 "../PROFILES/data_service.c" \
 "../PROFILES/devinfoservice.c" \
+"../PROFILES/game_button_service.c" \
 "../PROFILES/game_service.c" \
 "C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/blestack/host/gatt_uuid.c" \
 "C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/blestack/host/gattservapp_util.c" \

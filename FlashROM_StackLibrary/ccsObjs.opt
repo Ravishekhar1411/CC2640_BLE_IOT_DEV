@@ -15,6 +15,7 @@
 "./PROFILES/button_service.obj"
 "./PROFILES/data_service.obj"
 "./PROFILES/devinfoservice.obj"
+"./PROFILES/game_button_service.obj"
 "./PROFILES/game_service.obj"
 "./PROFILES/gatt_uuid.obj"
 "./PROFILES/gattservapp_util.obj"

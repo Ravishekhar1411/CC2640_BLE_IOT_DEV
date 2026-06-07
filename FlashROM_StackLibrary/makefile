@@ -27,6 +27,7 @@ ORDERED_OBJS += \
 "./PROFILES/button_service.obj" \
 "./PROFILES/data_service.obj" \
 "./PROFILES/devinfoservice.obj" \
+"./PROFILES/game_button_service.obj" \
 "./PROFILES/game_service.obj" \
 "./PROFILES/gatt_uuid.obj" \
 "./PROFILES/gattservapp_util.obj" \
@@ -181,7 +182,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "project_zero_cc2640r2lp_app.out"
 
 dependents:
-	-cd C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_stack_library/FlashROM_Library && $(MAKE) all
+	-cd C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_stack_library/FlashROM_Library && $(MAKE) clean all
 
 # Tool invocations
 project_zero_cc2640r2lp_app.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_stack_library/FlashROM_Library/project_zero_cc2640r2lp_stack_library.lib
@@ -195,8 +196,8 @@ project_zero_cc2640r2lp_app.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/Public
 # Other Targets
 clean:
 	-$(RM) $(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Application\als_handler.obj" "Application\game_handler.obj" "Application\lss_handler.obj" "Application\project_zero.obj" "Application\util.obj" "Drivers\ECC\ECCROMCC26XX.obj" "Drivers\RF\RFCC26XX_singleMode.obj" "Drivers\TRNG\TRNGCC26XX.obj" "ICall\icall.obj" "ICall\icall_cc2650.obj" "ICall\icall_user_config.obj" "ICallBLE\ble_user_config.obj" "ICallBLE\icall_api_lite.obj" "PROFILES\als_service.obj" "PROFILES\button_service.obj" "PROFILES\data_service.obj" "PROFILES\devinfoservice.obj" "PROFILES\game_service.obj" "PROFILES\gatt_uuid.obj" "PROFILES\gattservapp_util.obj" "PROFILES\led_service.obj" "PROFILES\lss_service.obj" "PROFILES\peripheral.obj" "Startup\CC2640R2_LAUNCHXL.obj" "Startup\LD2420.obj" "Startup\UartLog.obj" "Startup\ccfg_app_ble.obj" "Startup\main.obj" 
-	-$(RM) "Application\als_handler.d" "Application\game_handler.d" "Application\lss_handler.d" "Application\project_zero.d" "Application\util.d" "Drivers\ECC\ECCROMCC26XX.d" "Drivers\RF\RFCC26XX_singleMode.d" "Drivers\TRNG\TRNGCC26XX.d" "ICall\icall.d" "ICall\icall_cc2650.d" "ICall\icall_user_config.d" "ICallBLE\ble_user_config.d" "ICallBLE\icall_api_lite.d" "PROFILES\als_service.d" "PROFILES\button_service.d" "PROFILES\data_service.d" "PROFILES\devinfoservice.d" "PROFILES\game_service.d" "PROFILES\gatt_uuid.d" "PROFILES\gattservapp_util.d" "PROFILES\led_service.d" "PROFILES\lss_service.d" "PROFILES\peripheral.d" "Startup\CC2640R2_LAUNCHXL.d" "Startup\LD2420.d" "Startup\UartLog.d" "Startup\ccfg_app_ble.d" "Startup\main.d" 
+	-$(RM) "Application\als_handler.obj" "Application\game_handler.obj" "Application\lss_handler.obj" "Application\project_zero.obj" "Application\util.obj" "Drivers\ECC\ECCROMCC26XX.obj" "Drivers\RF\RFCC26XX_singleMode.obj" "Drivers\TRNG\TRNGCC26XX.obj" "ICall\icall.obj" "ICall\icall_cc2650.obj" "ICall\icall_user_config.obj" "ICallBLE\ble_user_config.obj" "ICallBLE\icall_api_lite.obj" "PROFILES\als_service.obj" "PROFILES\button_service.obj" "PROFILES\data_service.obj" "PROFILES\devinfoservice.obj" "PROFILES\game_button_service.obj" "PROFILES\game_service.obj" "PROFILES\gatt_uuid.obj" "PROFILES\gattservapp_util.obj" "PROFILES\led_service.obj" "PROFILES\lss_service.obj" "PROFILES\peripheral.obj" "Startup\CC2640R2_LAUNCHXL.obj" "Startup\LD2420.obj" "Startup\UartLog.obj" "Startup\ccfg_app_ble.obj" "Startup\main.obj" 
+	-$(RM) "Application\als_handler.d" "Application\game_handler.d" "Application\lss_handler.d" "Application\project_zero.d" "Application\util.d" "Drivers\ECC\ECCROMCC26XX.d" "Drivers\RF\RFCC26XX_singleMode.d" "Drivers\TRNG\TRNGCC26XX.d" "ICall\icall.d" "ICall\icall_cc2650.d" "ICall\icall_user_config.d" "ICallBLE\ble_user_config.d" "ICallBLE\icall_api_lite.d" "PROFILES\als_service.d" "PROFILES\button_service.d" "PROFILES\data_service.d" "PROFILES\devinfoservice.d" "PROFILES\game_button_service.d" "PROFILES\game_service.d" "PROFILES\gatt_uuid.d" "PROFILES\gattservapp_util.d" "PROFILES\led_service.d" "PROFILES\lss_service.d" "PROFILES\peripheral.d" "Startup\CC2640R2_LAUNCHXL.d" "Startup\LD2420.d" "Startup\UartLog.d" "Startup\ccfg_app_ble.d" "Startup\main.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '
