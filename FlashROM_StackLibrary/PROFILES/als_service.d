@@ -219,6 +219,7 @@ PROFILES/als_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/App
 PROFILES/als_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h
 PROFILES/als_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h
 PROFILES/als_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h
+PROFILES/als_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h
 
 ../PROFILES/als_service.c:
 
@@ -657,4 +658,6 @@ C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h:
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h:
 
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h:
+
+C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h:
 

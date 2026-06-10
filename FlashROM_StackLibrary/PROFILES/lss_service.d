@@ -212,6 +212,7 @@ PROFILES/lss_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/App
 PROFILES/lss_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h
 PROFILES/lss_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h
 PROFILES/lss_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h
+PROFILES/lss_service.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h
 PROFILES/lss_service.obj: C:/ti/xdctools_3_51_03_28_core/packages/xdc/runtime/Diags.h
 PROFILES/lss_service.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/extra/uartlog/UartLog.h
 PROFILES/lss_service.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/drivers/UART.h
@@ -643,6 +644,8 @@ C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h:
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h:
 
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h:
+
+C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h:
 
 C:/ti/xdctools_3_51_03_28_core/packages/xdc/runtime/Diags.h:
 

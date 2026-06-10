@@ -56,6 +56,7 @@ extern "C"
  */
 #include "lss_service.h"
 #include "als_service.h"
+#include "game_button_service2.h"
 /*********************************************************************
 *  EXTERNAL VARIABLES
 */

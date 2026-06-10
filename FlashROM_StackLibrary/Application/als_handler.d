@@ -212,6 +212,7 @@ Application/als_handler.obj: ../Application/project_zero.h
 Application/als_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h
 Application/als_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h
 Application/als_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h
+Application/als_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h
 Application/als_handler.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/extra/uartlog/UartLog.h
 Application/als_handler.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/drivers/UART.h
 Application/als_handler.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/devices/cc26x0r2/driverlib/aux_adc.h
@@ -651,6 +652,8 @@ C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h:
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h:
 
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h:
+
+C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h:
 
 C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/extra/uartlog/UartLog.h:
 

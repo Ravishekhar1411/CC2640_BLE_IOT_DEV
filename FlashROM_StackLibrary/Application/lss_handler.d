@@ -212,6 +212,7 @@ Application/lss_handler.obj: ../Application/project_zero.h
 Application/lss_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h
 Application/lss_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h
 Application/lss_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h
+Application/lss_handler.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h
 Application/lss_handler.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h
 Application/lss_handler.obj: C:/ti/xdctools_3_51_03_28_core/packages/xdc/runtime/Types.h
 Application/lss_handler.obj: C:/ti/xdctools_3_51_03_28_core/packages/xdc/runtime/IInstance.h
@@ -715,6 +716,8 @@ C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h:
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h:
 
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h:
+
+C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h:
 
 C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h:
 

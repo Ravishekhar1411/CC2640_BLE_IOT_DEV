@@ -77,6 +77,7 @@
 
 #include "Board.h"
 #include "project_zero.h"
+#include "event_log.h"
 
 // TI provided services
 #include "led_service.h"
@@ -88,8 +89,10 @@
 #include "lss_handler.h"
 #include "als_service.h"
 #include "als_handler.h"
-#include "game_service.h"
-#include "game_handler.h"
+#include "Game_button_handler.h"
+#include "game_button_service2.h"
+//#include "game_service.h"
+//#include "game_handler.h"
 
 /*********************************************************************
  * CONSTANTS
@@ -422,10 +425,17 @@ static AlsServiceCBs_t user_Als_ServiceCBs =
  .pfnCfgChangeCb = user_service_CfgChangeCB, // Noti/ind configuration callback handler
 };
 
+/*
 static gameServiceCBs_t user_game_ServiceCBs =
 {
  .pfnChangeCb    = user_service_ValueChangeCB, // Characteristic value change callback handler
  .pfnCfgChangeCb = user_service_CfgChangeCB, // Noti/ind configuration callback handler
+};
+*/
+static GameButtonLssServiceCBs_t user_game_Button_ServiceCBs =
+{
+  .pfnChangeCb    = user_service_ValueChangeCB, // No writable chars in Button Service, so no change handler.
+  .pfnCfgChangeCb = NULL, // Noti/ind configuration callback handler
 };
 #endif /* LAB_2 */
 
@@ -490,6 +500,33 @@ bStatus_t ProjectZero_UnRegistertToAllConnectionEvent (connectionEventRegisterCa
   return(status);
 }
 
+
+// TODO - In future make it compliant to standrad in header file Game_button_handler [06092026]
+
+void user_Button_Press_Service_ValueChangeHandler(char_data_t *pCharData);
+
+
+void user_Button_Press_Service_ValueChangeHandler( char_data_t *pCharData )
+{
+    static uint8_t pretty_data_holder[16]; // 5 bytes as hex string "AA:BB:CC:DD:EE"
+    Util_convertArrayToHexString( pCharData->data, pCharData->dataLen,
+                                  pretty_data_holder,
+                                  sizeof(pretty_data_holder) );
+
+    switch (pCharData->paramID)
+    {
+        case GAME_BUTTON_LSS_OFFON_ID:
+            Log_info0("In GAME_BUTTON_LSS_OFFON_ID");
+            break;
+
+        case GAME_BUTTON_LSS_RGB_ID:
+            Log_info0("In GAME_BUTTON_LSS_RGB_ID");
+            break;
+
+        default:
+            return;
+    }
+}
 /*********************************************************************
  * PUBLIC FUNCTIONS
  */
@@ -719,7 +756,9 @@ static void ProjectZero_init( void )
     // LAB_2_TODO_1 - Add services here
     LssService_AddService(selfEntity);
     AlsService_AddService(selfEntity);
-    gameService_AddService(selfEntity);
+  //gameService_AddService(selfEntity);
+  //TODO
+    Game_Button_LssService_AddService(selfEntity);
 #endif /* LAB_2 */
 
     // Register callbacks with the generated services that
@@ -732,7 +771,9 @@ static void ProjectZero_init( void )
     // LAB_2_TODO_2 - Register App callbacks here to call application
     LssService_RegisterAppCBs(&user_Lss_ServiceCBs);
     AlsService_RegisterAppCBs(&user_Als_ServiceCBs);
-    gameService_RegisterAppCBs(&user_game_ServiceCBs);
+    //gameService_RegisterAppCBs(&user_game_ServiceCBs);
+    //TODO
+    Game_Button_LssService_RegisterAppCBs(&user_game_Button_ServiceCBs);
 #endif /* LAB_2 */
 
     // Placeholder variable for characteristic initialization
@@ -915,6 +956,18 @@ static void user_processApplicationMessage( app_msg_t *pMsg )
 {
     char_data_t *pCharData = (char_data_t *) pMsg->pdu;
 
+    if ((pMsg->type == APP_MSG_SERVICE_WRITE) ||
+        (pMsg->type == APP_MSG_SERVICE_CFG) ||
+        (pMsg->type == APP_MSG_UPDATE_CHARVAL))
+    {
+        EventLog_store(pMsg->type, pCharData);
+    }
+
+    if (pMsg->type == APP_MSG_SERVICE_WRITE)
+    {
+        EventLog_printAll();
+    }
+
     switch (pMsg->type)
     {
         case APP_MSG_SERVICE_WRITE: /* Message about received value write */
@@ -934,6 +987,9 @@ static void user_processApplicationMessage( app_msg_t *pMsg )
                     break;
                 case DATA_SERVICE_SERV_UUID:
                     user_DataService_ValueChangeHandler(pCharData);
+                    break;
+                case GAME_BUTTON_LSS_SERVICE_SERV_UUID:
+                    user_Button_Press_Service_ValueChangeHandler(pCharData);
                     break;
 
             }

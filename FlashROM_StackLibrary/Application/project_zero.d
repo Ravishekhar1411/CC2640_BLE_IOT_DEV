@@ -212,6 +212,7 @@ Application/project_zero.obj: ../Application/project_zero.h
 Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/lss_service.h
 Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h
 Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h
+Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h
 Application/project_zero.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/kernel/tirtos/packages/ti/sysbios/knl/Task.h
 Application/project_zero.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/kernel/tirtos/packages/ti/sysbios/knl/Event.h
 Application/project_zero.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/kernel/tirtos/packages/ti/sysbios/knl/Queue.h
@@ -248,13 +249,13 @@ Application/project_zero.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti
 Application/project_zero.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/devices/cc26x0r2/driverlib/rom.h
 Application/project_zero.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/devices/cc26x0r2/driverlib/gpio.h
 Application/project_zero.obj: C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/devices/cc26x0r2/inc/hw_gpio.h
+Application/project_zero.obj: ../Application/event_log.h
 Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/led_service.h
 Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/button_service.h
 Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/data_service.h
 Application/project_zero.obj: ../Application/lss_handler.h
 Application/project_zero.obj: ../Application/als_handler.h
-Application/project_zero.obj: C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_service.h
-Application/project_zero.obj: ../Application/game_handler.h
+Application/project_zero.obj: ../Application/Game_button_handler.h
 
 ../Application/project_zero.c:
 
@@ -680,6 +681,8 @@ C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/Application/common.h:
 
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/als_service.h:
 
+C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_button_service2.h:
+
 C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/kernel/tirtos/packages/ti/sysbios/knl/Task.h:
 
 C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/kernel/tirtos/packages/ti/sysbios/knl/Event.h:
@@ -752,6 +755,8 @@ C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/devices/cc26x0r2/driverlib/gp
 
 C:/ti/simplelink_cc2640r2_sdk_5_30_00_03/source/ti/devices/cc26x0r2/inc/hw_gpio.h:
 
+../Application/event_log.h:
+
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/led_service.h:
 
 C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/button_service.h:
@@ -762,7 +767,5 @@ C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/data_service.h:
 
 ../Application/als_handler.h:
 
-C:/Users/Public/ti_BLE/project_zero_cc2640r2lp_app/PROFILES/game_service.h:
-
-../Application/game_handler.h:
+../Application/Game_button_handler.h:
 
